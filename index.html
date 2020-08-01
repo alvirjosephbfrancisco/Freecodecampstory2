@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FreeCodeCamp Story2</title>
+<Meta name = viewport content = "width=device-width, initial-scale=1.0">
+<link href = "css/sytles.css" type = "text/css" rel = "stylesheet">    
+</head>
+<body>
+
+<h1 id="title"> Aspiring Pilot Survey Form </h1>
+<p id="description"> Take a short survey to help us prepare programs 
+    for future aspiring pilots
+</p>
+<!------------------------START OF SURVEY--------------------------------------->
+<form id="survey-form">
+<!------------------------NAME EMAIL AGE---------------------------------------->
+<div class = "nen">
+<br>
+<label for = "name" id="name-label">My Name</label>
+<br>
+<input id = "name" type="text" placeholder="input name" required>
+<br>
+<label for = "email" id="email-label">Email</label>
+<br>
+<input id = "email" type="email" placeholder="input email" required> 
+<br>
+<label for = "number" id="number-label">Age</label>
+<br>
+<input id = "number" type="number" min="1" max="200"  placeholder="age" required step="5">
+<br>
+</div>
+
+<!------------------------DROP DOWN-------------------------------------------->
+<div class = "dropdown"> 
+<label for = "dropdown" >Type of pilot</label>
+<select id = "dropdown" name = "dropdown" class = "select" >
+<option value = "private-pilot" name = "dropdown" class = "options">private pilot</option>
+<option value = "airline-pilot" name = "dropdown" class = "options">airline pilot</option>
+<option value = "private-pilot" name = "dropdown" class = "options">army pilot</option>
+<option value = "airline-pilot" name = "dropdown" class = "options">sport pilot</option>
+</select>
+<p></p>
+</div>
+
+
+<!------------------------RADIO BUTTONS---------------------------------------->
+<div class = "tang">
+    <p>Would you recommend you friends to be a pilot?</p>
+    <input type = "radio" id = "definitely" name ="options" >
+    <label for = "definitely" >Definitely</label>
+    <br>
+    <input type = "radio" id = "maybe" name ="options" >
+    <label for = "maybe" >Maybe</label>
+    <br>
+    <input type = "radio" id = "notsure" name ="options" >
+    <label for = "notsure" >Not sure</label>
+</div>
+<!------------------------CHECK BOXES------------------------------------------>
+<div class = "checkbox">
+    <p>What do you like most about in becoming a pilot?</p>
+    <input type = "checkbox" value = "salary" name = "salary" id = "salary">
+    <label for = "salary">Salary</label><br>
+    <input type = "checkbox" value = "flying" name = "flying" id = "flying">
+    <label for = "flying">Flying</label><br>
+    <input type = "checkbox" value = "salary" name = "salary" id = "salary">
+    <label for = "prestige">Prestige</label><br>
+    <input type = "checkbox" value = "travel" name = "travel" id = "travel">
+    <label for = "travel">Travel</label><br>
+</div>
+<br>
+<!-----------------------COMMENTS---------------------------------------->
+<div class = "textarea">
+    <label for = "textarea">Comment section:</label><br>
+    <textarea name = "textarea" id = "textarea" required placeholder = "comments">
+
+    </textarea >
+ 
+</div>
+<br>
+
+<div class = "submit">
+<input type = "submit" value = "submit">
+</div>
+
+</form>
+</body>
+</html>
